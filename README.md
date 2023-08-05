@@ -1,12 +1,12 @@
 # arduino-collection
 
-This is a collection of arduino project either created from scratch or heavily customised for my own projects
+This is a collection of arduino projects either created from scratch or heavily customised for my own projects
 
 serial_monitor.ino  
 
-This is a cheap RX serial monitor, this was created referencing various code snippets off the net but using this as a basis (all credits to the original author... https://www.instructables.com/HOW-TO-use-the-ARDUINO-SERIAL-MONITOR/) 
+This is a cheap RX serial monitor, this was created referencing various code snippets off the net but using this as a basis (all credits to the original author... https://www.instructables.com/HOW-TO-use-the-ARDUINO-SERIAL-MONITOR/).   Install the ino file to your pcb as per any other arduino project.
 
-The main changes were:
+The main changes from the original version was:
 - changing the speed ie Serial.begin(115200);
 - commenting out a lot of the code i didn't need
 - adding an if statement to so that it could correctly interpret carriage returns and new lines ie IF ((ByteReceived, HEX) == 'D') and also IF ((ByteReceived, HEX) == 'A')
